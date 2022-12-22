@@ -1,0 +1,41 @@
+Aufgabenstellung: 
+
+Das Bionikanimation "Life" wurde 1970 vom britischen Mathematiker J.H. 
+Conway erfunden. Wir betrachten eine zweidimensionale Matrix mit n*m 
+Elementen (Zellen) des Typs char. Enthält eine Zelle ein Leerzeichen, 
+dann ist sie "tot". Es handelt sich um eine "lebende" Zelle, wenn in ihr ein 
+"*" eingetragen ist. Mehrere benachbarte lebende Zellen bilden einen 
+Organismus. 
+
+Eine Zelle ist von 8 Nachbarzellen umgeben, wenn sie sich nicht gerade 
+am Rand der Matrix befinden. Um die Gestalt eines Organismus in der 
+nächsten Generation zu ermitteln, gelten folgende Regeln, die auf die 
+gesamte Matrix anzuwenden sind: 
+
+1. Besitzt eine lebende Zelle 0, 1 oder mehr als 3 lebende 
+Nachbarzellen, stirbt sie an Vereinsamung oder Übervölkerung. 
+
+2. Besitzt eine lebende Zelle 2 oder 3 lebende Nachbarzellen, dann 
+existiert sie in der nächsten Generation weiter. 
+
+3. Ist eine tote Zelle von genau 3 lebenden Zellen umgeben, dann 
+entsteht aus ihr eine neue lebende Zelle. 
+
+Schreiben Sie ein Programm, mit dem Sie die Entwicklung eines solchen 
+Organismus auf dem Bildschirm nachvollziehen können. 
+
+Note 3: Je nach Wunsch des Nutzers wird der Startzustand der Matrix 
+aus einer Datei geladen oder wird per Zufallszahlengenerator ein 
+Startzustand berechnet. Der Nutzer kann entscheiden, ob eine 
+schrittweise Abarbeitung (schrittweise Entwicklung der Population mit 
+der Tatstatur) oder eine "fließende Animation" gewünscht wird. 
+
+Note 2: Die Funktionalität für die Note 3 ist realisiert. Der Nutzer 
+kann über ein Menü zwischen mindestens 3 Dateien (d.h. mindestens 3 
+Startzuständen) wählen. Bei der Generierung eines Startzustandes durch 
+den Zufallszahlengenerator kann der Nutzer angeben, zu wieviel Prozent 
+das Spielfeld mit lebenden Zellen zu füllen ist. 
+
+Note 1: Die Funktionalität für die Note 2 ist realisiert. Der Nutzer 
+kann im Arbeitsfeld Startzustände editieren und diese dann unter einem 
+Dateinamen seiner Wahl abspeichern. 
