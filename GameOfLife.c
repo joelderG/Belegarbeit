@@ -24,10 +24,12 @@ int main(){
     choice = dau_eingabe(1,2);
     printf("\n");
 
+    // 1. Menü für Startzustand über eine Datei
     if(choice == 2){
         printf("Datei");
     }
 
+    // 2. Menü für Startzustand: Zufall und Datei
     switch(choice){
         case 1:
                 printf("\nGeben Sie die Anzahl an Zeilen an (1 - 255):");
